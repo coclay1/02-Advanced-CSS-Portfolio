@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #d9dcd6;
+}
+
+.header {
+    padding: 20px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-color: #2a607c;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header h1{
+    display: inline-block;
+    font-size: 25px;
+}
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li{
+    display: inline;
+    margin-left: 25px;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    font-size: 25px;
+}
+
+.banner {
+    height: 650px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(./images/raoul-droog-yMSecCHsIBc-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.aboutme {
+    background-color: aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.aboutme h2 {
+    font-size: 50px;
+    margin-right: 25px;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 922px) {
+    .header{
+        background-color: blueviolet;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header{
+        background-color: crimson;
+        flex-direction: row;
+    }
+}
+@media screen and (max-width: 525px) {
+    .header {
+        background-color: blue;
+        flex-direction: column;
+    }
+}
