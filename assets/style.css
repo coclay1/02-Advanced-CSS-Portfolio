@@ -5,45 +5,28 @@
 }
 
 body {
-    background-color: #d9dcd6;
 }
 
-.header {
-    padding: 20px;
-    font-family: Georgia, Times, 'Times New Roman', serif;
-    background-color: #2a607c;
-    color: white;
+header {
+    background-color: green;
+    padding: 10px;
+}
+nav {
     display: flex;
-    justify-content: space-between;
-    flex: 1 1 200px;
+    justify-content: flex-end;
 }
 
-.header h1{
-    display: inline-block;
-    font-size: 25px;
-}
-
-.header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.header nav ul {
-    list-style-type: none;
-}
-
-.header nav ul li{
-    display: inline;
-    margin-left: 25px;
-}
 nav a {
-    color: white;
+    padding: 14px 20px;
+    color: rgb(16, 213, 248);
     text-decoration: none;
+    font-size: 20px;
 }
 
-p {
-    font-size: 25px;
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .banner {
@@ -61,38 +44,45 @@ p {
     right: 100px;
 }
 
-.aboutme {
-    background-color: aquamarine;
+aside{
+    flex: 1;
+    background-color: #b9c6ae;
+    padding: 20px;
+}
+
+
+section {
+    flex: 3;
+    padding: 20px;
+}
+
+address{
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-.aboutme h2 {
-    font-size: 50px;
-    margin-right: 25px;
+address a{
+    color: rgb(16, 213, 248);
+    text-decoration: none;
+    font-size: 30px;
 }
-
-
-
 
 
 
 
 @media screen and (max-width: 922px) {
-    .header{
-        background-color: blueviolet;
+    header{
         flex-direction: row;
     }
 }
 @media screen and (max-width: 768px) {
-    .header{
-        background-color: crimson;
+    header{
         flex-direction: row;
     }
 }
 @media screen and (max-width: 525px) {
-    .header, nav{
-        background-color: blue;
+    header, nav, address{
         flex-direction: column;
     }
+    
 }
