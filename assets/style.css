@@ -14,8 +14,8 @@ body {
     background-color: #2a607c;
     color: white;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex: 1 1 200px;
 }
 
 .header h1{
@@ -37,7 +37,7 @@ body {
     display: inline;
     margin-left: 25px;
 }
-a {
+nav a {
     color: white;
     text-decoration: none;
 }
@@ -54,19 +54,24 @@ p {
     background-size: cover;
     background-position: center;
 }
+.banner p{
+    background-color: brown;
+    position: absolute;
+    bottom: 185px;
+    right: 100px;
+}
 
 .aboutme {
     background-color: aquamarine;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .aboutme h2 {
     font-size: 50px;
     margin-right: 25px;
-
 }
+
 
 
 
@@ -86,7 +91,7 @@ p {
     }
 }
 @media screen and (max-width: 525px) {
-    .header {
+    .header, nav{
         background-color: blue;
         flex-direction: column;
     }
