@@ -5,15 +5,26 @@
 }
 
 body {
+    background-color: bisque;
 }
 
 header {
-    background-color: green;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    background-color: aquamarine;
+    color: rgb(77, 73, 73);
+    width: 20%;
+    text-align: right;
 }
 nav {
     display: flex;
-    justify-content: flex-end;
 }
 
 nav a {
@@ -27,54 +38,73 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
-
-p{
-    padding-bottom: 14px;
+div{
+    display: flex;
 }
 
 .banner {
     height: 650px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url(./images/raoul-droog-yMSecCHsIBc-unsplash.jpg);
+    background-image: url(./images/kobu-agency-ipARHaxETRk-unsplash.jpg);
     background-size: cover;
     background-position: center;
 }
-.banner p{
-    background-color: brown;
-    position: absolute;
-    bottom: 185px;
-    right: 100px;
+
+
+.section1,
+.section2,
+.section3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 20px;
 }
 
-aside{
-    flex: 0;
-    background-color: #b9c6ae;
+.section1,
+.section2,
+.section3 aside {
+    flex: 1;
     padding: 20px;
     font-size: 50px;
 }
 
-section {
+.section1, article {
+    flex: 1;
+}
+
+.section1 p {
+    padding: 14px;
+    font-size: 25px;
+}
+
+.section2 {
+    border: solid blue;
+}
+.section2 figure {
     display: flex;
-    flex: 3;
-    padding: 20px;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+#cactus {
+    flex: 0 1 300px;
+
 }
 
 .project {
-    flex: 4;
+    flex: 1;
     background-color: white;
     padding: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: flex-start;
+    border: solid red;
 }
 
-.project1:hover {
-    background-color: crimson;
-}
-
-.project1 {
+ .project1 {
     border-width: 1px;
     border-radius: 50px;
     padding: 5px;
@@ -83,16 +113,28 @@ section {
     margin: 5px;
 }
 
-
 .project1 img {
+    flex: 1;
     border-radius: 50px 50px 50px 50px;
     width: 100%;
 }
+.project1:hover {
+    background-color: crimson;
+}
 
+
+.section3 {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
 
 address{
     display: flex;
-    justify-content: center;
+    flex: 1;
+    justify-content: space-evenly;
 }
 
 address a{
@@ -116,8 +158,12 @@ address a{
     }
 }
 @media screen and (max-width: 525px) {
-    header, nav, main, address{
+    header,
+    nav,
+    main,
+    address{
         flex-direction: column;
     }
     
 }
+
