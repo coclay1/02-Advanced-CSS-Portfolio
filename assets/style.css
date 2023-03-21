@@ -116,6 +116,25 @@ div{
     background-color: crimson;
 }
 
+.project1:focus {
+    outline: none;
+    border: cadetblue;
+}
+
+.project:active {
+    font-size: 180%;
+    box-shadow: 0 0 10px #000 inset;
+}
+
+.card-header{
+    text-decoration: none;
+    background-color: pink;
+    border-radius: 10px;
+    position: relative;
+    top: 100px;
+    transition: all 0.5s ease-in-out
+}
+
 
 .section3 {
     display: flex;
@@ -149,6 +168,9 @@ address a{
 @media screen and (max-width: 768px) {
     header{
         flex-direction: row;
+    }
+    figure{
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 525px) {
