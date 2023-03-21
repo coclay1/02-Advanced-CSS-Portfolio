@@ -158,7 +158,12 @@ address a{
 }
 
 
-
+@media screen and (max-width: 1360px) {
+    figure {
+        flex-direction: column;
+    }
+    
+}
 
 @media screen and (max-width: 922px) {
     header{
@@ -169,7 +174,8 @@ address a{
     header{
         flex-direction: row;
     }
-    figure{
+    figure,
+    article{
         flex-direction: column;
     }
 }
