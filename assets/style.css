@@ -173,15 +173,15 @@ address a{
     aside{
         width: 100%;
     }
-    .project section {
+    /* .project section {
         flex-basis: 100%;
-    }
+    } */
     header{
         flex-direction: row;
     }
     figure,
     article{
-        /* flex-direction: column; */
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 525px) {
@@ -190,7 +190,7 @@ address a{
     main,
     figure,
     address{
-        /* flex-direction: column; */
+        flex-direction: column;
     }
     
 }
